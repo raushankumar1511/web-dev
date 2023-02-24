@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: inherit;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      background: #ffff45;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    input,
+    textarea {
+      border: none;
+      border-radius: 1px;
+      padding: 1em 0.5em;
+ border-radius: 1em;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      width: 50%;
+      max-width: 550px;
+      background: #fdfdfd;
+      padding: 3em;
+      border-radius: 10px;
+      margin: auto;
+      box-shadow:20px ;
+    }
+    .form-button {
+      /* border: none; */
+      padding: 1em;
+      background: transparent;
+      border-radius: 1em;
+      cursor: pointer;
+      font: bold;
+      text-decoration: white;
+    }
+    .form-input {
+     
+    }
+
+    .form-title {
+      font-size: 2em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <form class="form">
+      <h2 class="form-title">contact us</h2>
+      <input class="form-input" type="text" placeholder="name" />
+      <input class="form-input" type="text" placeholder="subject" />
+      <input class="form-input" type="phone" placeholder="phone" />
+      <input class="form-input" type="email" placeholder="email" />
+      <textarea name="message" placeholder="message"></textarea>
+      <button type="button" class="form-button">submit</button>
+    </form>
+  </body>
+</html>
